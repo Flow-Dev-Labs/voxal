@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="flex flex-col gap-4 min-h-screen items-center justify-center bg-white font-sans dark:bg-black">
@@ -9,6 +11,10 @@ export default function Home() {
         &quot;English&quot;) better than competitors by combining specialized
         Python transcription with dynamic LLM personas.
       </p>
+
+      <Link href="/dashboard" className="text-blue-500">
+        Get Started
+      </Link>
     </div>
   );
 }
